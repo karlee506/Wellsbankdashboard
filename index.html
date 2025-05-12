@@ -1,0 +1,25 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WellBank Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>WellBank</h1>
+    <input id="username" type="text" placeholder="Username">
+    <input id="password" type="password" placeholder="Password">
+    <button id="loginBtn">Log In</button>
+  </div>
+
+  <script>
+    // Simple “authentication” redirect
+    document.getElementById('loginBtn').addEventListener('click', () => {
+      // In a real app you'd verify credentials here
+      window.location.href = 'dashboard.html';
+    });
+  </script>
+</body>
+</html>
